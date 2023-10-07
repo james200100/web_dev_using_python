@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Raj Careers
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  </head>
+
+  <body>
+      <div class="container" > 
+    <h1>
+        Raj Careers
+      </h1>
+      <img class="img-fluid" src="https://webdevusingpython.rajtyagi5.repl.co/static/saulo-mohana-wNz7_5EvUWU-unsplash%20(1).jpg" height="320">
+      <h2>
+        About Raj
+      </h2>
+  
+      <p>
+        "Ipsum" redirects here. For the car, see Toyota Ipsum.
+  An example of the Lorem ipsum placeholder text on a green and white webpage.
+  Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal
+  
+  One of the earliest examples of the Lorem ipsum placeholder text on 1960s advertising.
+  In publishing and graphic design, Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+      </p>
+  
+      <h2>
+        Open Positions
+      </h2>
+      <div>
+        {% for job in jobs%}
+        {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+      <div>  
+      <button>
+        Contact Us
+      </button>
+      </div>
+      </div>
+  </body>
+</html>
